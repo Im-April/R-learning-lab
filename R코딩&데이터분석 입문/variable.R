@@ -53,5 +53,31 @@ b <- F
 a
 b
 a+b
+
+# NULL은 '저장되지 않음'을 의미하는 특수한 값
+# 초기값을 어떤 것으로 정해야 할지 애매할 때 사용
+# 계산에 사용할 수 없음음
 addr <- NULL
 print(addr)
+
+# NA는 결측값 또는 누락된 값을 나타낼 때 사용용
+a <- NA
+b <- 'NA'
+a
+b
+
+# NaN이나 Inf,-Inf는 각각 수학적으로 정의가 불가한 값, 양의 무한대, 음의 무한대
+1/0
+-2/0
+sqrt(-3)
+
+salt <- 50
+water <- 100
+result <- salt/(salt+water)*100
+cat('소금: ',salt,' 물: ',water,' 농도: ',result,'%')
+
+
+salt <- 70
+water <- 110
+result <- salt/(salt+water)*100
+cat('소금: ',salt,' 물: ',water,' 농도: ',result,'%')
