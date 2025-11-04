@@ -109,3 +109,23 @@ v1[c(1,5)] <- c(10,20) # 1, 5 번째 값을 각각 10,20으로 바꿈
 v1
 v1 <- c(100,200,300) # v1을 바꿈
 v1
+
+play <- c(421,298,254,232,239,368,465)
+names(play) <- c('sun','mon','tue','wed','thu','fri','sat')
+play[c('tue','thu')] <- c(267,241)
+play
+
+# 이름, 원금, 이율 기간을 각각 벡터로 만든다.
+customer <- c('kim','lee','park','choi','seo')
+deposit <- c(5000000,4500000,4000000,5500000,6000000)
+rate <- c(3.5,3,4,5,4.5)
+period <- c(2,2,5,7,4)
+
+# 이름을 설정
+names(deposit) <- customer
+names(rate) <- customer
+names(period) <- customer
+
+# 만기 금액 계산
+sum <- deposit['kim'] * (1+rate['kim']/100)^period['kim']
+sum
