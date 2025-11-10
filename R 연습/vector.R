@@ -45,3 +45,33 @@ mean(score)
 
 # score 중 90점 이상인 값만 출력
 score[score >= 90]
+
+# 벡터에 이름 붙이기
+score <- c(80,95,90)
+names(score) <- c('kor','eng','math')
+score
+score['eng']
+
+# 조건 필터링
+score <- c(80,95,90,88,92)
+score[score >= 90] # 90점 이상
+score[score< 90] # 90점 미만
+score >= 90
+
+# 벡터 유용한 함수들
+mean(score) # 평균
+sort(score, decreasing = TRUE) # 정렬
+sort(score, decreasing = FALSE) # 정렬
+unique(c(1,1,2,2,3,4,4)) # 중복 제거
+
+# 타입 변환
+x <- c('1','2','3')
+x
+as.numeric(x) # 문자 -> 숫자
+x
+
+# 벡터 붙이기 / 더하기
+x <- c(1,2,3)
+y <- c(4,5,6)
+c(x,y)
+
